@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>classic fashion website</title>
+        <link rel="stylesheet" href="classic.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width =device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="banner">
+                <img src=".//css/ttimi/TIMI CLASSIC LOGO png.png" class="logo">
+                <div class="banner-text">
+                    <h1>Timi classic</h1>
+                    <p>Style Your fashion with a luxury Reliable Brand</p>
+                    <div class="banner-btn">
+                        <a href="classicmen.html"><span></span>MEN</a>
+                        <a href="classicwomen.html"><span></span>WOMEN</a>
+                    </div>
+                </div>
+        </section>
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="classic.htmln">HOME</a></li>
+                    <li><a href="classicmen.html">MEN COLLECTIONS</a></li>
+                    <li><a href="classicwomen.html">WOMEN COLLECTIONS</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">MEET US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menubtn">
+            <img src=".//css/ttimi/bars-solid.svg" id="menu">
+        </div>
+
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+
+            sidenav.style.right = "-250px";
+
+            menubtn.onclick = function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right = "0";
+                    menu.src = ".//css/xmark-solid.svg";
+                }
+                else{
+                    sidenav.style.right = "-250px";
+                    menu.src = ".//css/ttimi/bars-solid.svg";
+                }
+            }
+        </script>
+    </body>
+</html>
